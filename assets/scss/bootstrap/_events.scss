@@ -1,0 +1,226 @@
+//
+// Events Customization
+// --------------------------------------------------
+
+
+.tribe-events-event-meta{
+	&:first-child{
+	border: none;
+	}
+}
+.single-tribe_events .tribe-events-event-meta{
+	margin: 0;
+}
+#tribe-events-content ul.tribe-events-sub-nav{
+	margin: 0;
+	padding: 0;
+	li{
+	float: left;
+	width: 50%;
+	margin: 0;
+		>a {
+			@extend .btn;
+			@extend .btn-default;
+			i{
+				margin-right: 0;
+			}
+		}
+	}
+	li.tribe-events-nav-previous{
+		float: left;
+		margin: 0;
+		> a{
+			float: left;
+		}
+	}
+	li.tribe-events-nav-next {
+		float: right;
+		margin: 0;
+		> a{
+			float: right;
+		}
+	}
+}
+a.tribe-events-gmap{
+	@extend .btn;
+	@extend .btn-info;
+	@extend .btn-sm;
+	margin: .4em 0 .6em 0;
+	display: table;
+}
+a.tribe-events-button{
+	@extend .btn;
+	@extend .btn-info;
+	margin-right: .5em;
+}
+.single-tribe_events #tribe-events-header, .tribe-events-map #tribe-events-header{
+	padding: 0;
+	margin: 0;
+}
+#tribe-events-bar{
+	@extend .well;
+}
+.tribe-bar-filters-inner{
+	@extend .row;
+	> div {
+		@extend .col-xs-5;
+	}
+	input{
+		@extend .form-control;
+	}
+}
+.tribe-bar-submit{
+	padding-top: 1.7em;
+}
+#tribe-bar-views{
+	min-height: 5.25em;
+	.tribe-bar-views-list {
+		list-style-type: none;
+		margin: 0 1.1em;
+		padding: 0;
+		position: absolute;
+		left: 0;
+		top: auto;
+		z-index: 99;
+		border-radius: 0px;
+		border: 1px solid $gray-lighter;
+		@include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+		@include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+		
+	}
+	li.tribe-bar-views-option {
+		line-height: 1.4;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		background: none;
+		filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+		list-style: none;
+		border: none;
+		padding: 0;
+		display: none;
+	}
+	i.tribe-selector{
+		position: absolute;
+		top: .75em;
+		right: .75em;
+		color: $gray-light;
+		font-size: .935em;
+	}
+	
+}
+
+#tribe-bar-views .tribe-bar-views-option:first-child, #tribe-bar-views .tribe-bar-views-option.tribe-bar-active,
+#tribe-bar-views.tribe-bar-views-open .tribe-bar-views-option {
+	display: list-item;
+}
+
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a {
+	color: #444;
+	text-align: left;
+	display: block;
+	text-decoration: none;
+	padding: .5em .75em;
+	height: 2.4em;
+	background: $white;		
+}
+
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:hover {
+	background: $gray;
+	color: $white;
+}
+
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-active a:hover {
+	background: $gray;
+}
+
+#tribe-bar-views .tribe-bar-views-option:last-child  a {
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+}
+.tribe-bar-filters{
+	#tribe-bar-date{
+		position: relative;
+	}
+}
+/* Views Select */
+.tribe-no-js #tribe-bar-views [name="tribe-bar-view"] {
+	display: block;
+}
+#tribe-bar-views [name="tribe-bar-view"] {
+	display: none;
+}
+#tribe-bar-views .tribe-bar-views-list {
+	width: 80%;
+	float: left;
+}
+#tribe-bar-views .tribe-bar-settings {
+	display: none;
+}
+.tribe-icon-upcoming{
+	@extend .fa;
+	@extend .fa-list-ul;
+}
+.tribe-icon-month{
+	@extend .fa;
+	@extend .fa-calendar;
+}
+.tribe-icon-day{
+	@extend .fa;
+	@extend .fa-calendar;
+}
+// Tribe Text
+h2.tribe-events-page-title{
+	text-align: left;
+}
+// Tribe Calendar Table
+
+#tribe-events-content table.tribe-events-calendar {
+font-size: .935em;
+	thead th {
+		background-color: $gray;
+		color: $white;
+		font-weight: bold;
+		padding: 1em 0;
+		white-space: nowrap;
+		border-left: 1px solid $gray-light;
+		border-right: 1px solid $gray-light;
+	}
+	td{
+		font-size: 1em;
+	}
+	div[id*="tribe-events-event-"] h3.entry-title{
+		font-size: 1em;
+	}
+	div[id*="tribe-events-daynum-"], .tribe-events-calendar div[id*="tribe-events-daynum-"] a{
+		font-size: 1em;
+		color: $gray-darker;
+	}
+}
+.events-archive.events-gridview #tribe-events-content table .vevent{
+	margin: 0;
+	padding: .4em .6em;
+}
+//
+// List View
+span.tribe-events-list-separator-month{
+	@extend .h2;
+	display: block;
+}
+
+
+//
+//Tooltip
+.tribe-events-calendar .tribe-events-tooltip, .tribe-events-week .tribe-events-tooltip, .recurring-info-tooltip{
+	@include box-shadow(0 5px 10px rgba(0,0,0,.2));
+	background-color: $white;
+	color: $gray-dark;
+	border-color: $gray-lighter;
+}
+.datepicker.dropdown-menu{
+	width: 210px;
+	table{
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,4 @@
+<div class="hidden-xs">
+  <p id="breadcrumbs"> <span prefix="v: http://rdf.data-vocabulary.org/#"> <span typeof="v:Breadcrumb"><a href="<?php echo esc_url(home_url('/')); ?>" rel="v:url" property="v:title">Home</a></span> &nbsp;|&nbsp; <span typeof="v:Breadcrumb"><a href="<?php echo esc_url(home_url('/')); ?>/about-us/" rel="v:url" property="v:title">About Us</a></span> &nbsp;|&nbsp; <span typeof="v:Breadcrumb"><a href="<?php echo esc_url(home_url('/')); ?>/about-us/alumni/" rel="v:url" property="v:title">Alumni</a></span> &nbsp;|&nbsp; <span typeof="v:Breadcrumb"><a href="<?php echo esc_url(home_url('/')); ?>/about-us/alumni/uc-stories/" rel="v:url" property="v:title">UC Stories</a></span> &nbsp;|&nbsp; <span typeof="v:Breadcrumb"><span class="breadcrumb_last" property="v:title"><? the_title(); ?></span></span> </span></span></p>
+</div>
+<?php get_template_part('templates/content', 'uc-story'); ?>

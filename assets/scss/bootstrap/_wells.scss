@@ -1,0 +1,62 @@
+//
+// Wells
+// --------------------------------------------------
+
+
+// Base class
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: $well-bg;
+  border: 1px solid $well-border;
+  border-radius: $border-radius-base;
+  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+  blockquote {
+    border-color: #ddd;
+    border-color: rgba(0,0,0,.15);
+  }
+}
+
+// Sizes
+.well-lg {
+  padding: 1.5em;
+  border-radius: $border-radius-large;
+}
+.well-sm {
+  padding: .75em;
+  border-radius: 0px;
+}
+.well-orange{
+	background-color: $beige;
+}
+.well-quote{
+	//font-size: $font-size-large;
+	padding: 1em;
+	font-weight: 200;
+	line-height: 1.6em;
+	.fa-quote-left, .fa-quote-right{
+		color: $orange;
+	}
+	.fa-quote-left{
+		margin-right: .33em;
+	}
+	.fa-quote-right{
+		margin-left: .33em;
+	}
+	.citation{
+		font-size: .935em;
+		font-weight: 200;
+		padding: 1em 0 0 0;
+		clear: both;
+		text-align: right;
+		line-height: 1.2em;
+	}
+	@media (max-width: $screen-xs-max) {
+		font-size: 1em;
+		
+		.citation{
+			font-size: .875em;
+		}
+	}
+}

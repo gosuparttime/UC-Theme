@@ -1,0 +1,223 @@
+// Devin Edits
+img{
+	-ms-interpolation-mode: bicubic;
+	max-width: 100%;
+}
+.white-bg{
+	background: $white;
+}
+.gray-bg{
+	background: $gray-dark;
+}
+
+.light-gray-bg{
+	background: $gray-lightest;
+}
+
+.half-col{
+	width: 47%;
+	margin-right: 3%;
+	float: left;
+}
+.clear{
+	clear: both;
+}
+.spacer{
+	border-top: 2px solid $white;
+	border-top: 2px solid $white;
+}
+.white-th{
+	img{
+		border: 1px solid $white;
+	}
+	//background: $white;
+}
+.blocker{
+	display: block;
+}
+.feed-item{
+	padding: .1em 0 1em 0;
+	border-top: 1px solid $gray-lighter;
+}
+#feature-head{
+	background-color: $blue-faded;
+	background-image: url("../img/banner-bg.gif");
+	overflow: hidden;
+	.white-border{
+		padding-left: 1px;
+		padding-right: 1px;
+		background: $white;
+		@include box-shadow(0 0 100px rgba($blue-dark,.5));
+	}
+}
+#content-wrap{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	min-height: 25em;
+	.content{
+		padding-bottom: 2em;
+		padding-top: 0;
+		@media (min-width: $screen-sm-min) {
+			padding-top: 1em;
+		}
+	}
+}
+#myCarousel{
+	
+	margin-right: -1px;
+	margin-left: -1px;
+	@media (min-width: $screen-sm-min) {
+		margin-right: 1px;
+		margin-left: 1px;
+		
+	}
+	@media (min-width: $screen-md-min) {
+		margin-right: -1px;
+		margin-left: 0;
+	}
+}
+#sidebar{
+	float: right;
+	.widget_archive{
+		 select{
+			@extend .form-control;
+			@extend .select;
+			
+		}
+	}
+}
+#side-nav{
+	@media (min-width: $screen-sm-min) {
+		padding: 0 15px;
+	}
+	padding: 0;
+	//margin: 0 -15px;
+}
+.col-half{
+	@media (min-width: $screen-sm-min) {
+		width: 50%;
+		float: left;
+	}
+	//padding: 0 15px;
+	float: none;
+	width: 100%;
+}
+hr{
+	&.divide{
+		border-top: none;
+		margin: 2em 0;
+		height: 3px;
+		background-image: url("../img/divider.png");
+		background-repeat: repeat-x;
+	}
+	&.faint{
+		border-style: dotted;
+		border-color: $gray-lighter;
+		margin-top: .33em;
+	}
+}
+.add-mar{
+	@media (min-width: $screen-sm-min) {
+		margin-bottom: 1em;
+	}
+	margin-bottom: 0;
+}
+// Callouts
+#callout{
+	p:first-child {
+	  margin-top: 0;
+	}
+}
+// Image classes
+.alignleft{
+	float: left;
+	margin-right: 1em;
+}
+.alignright{
+	float: right;
+	margin-left: 1em;
+}
+.aligncenter{
+	margin: 0 auto 1em auto;
+	text-align: center;
+}
+.alignleft, .alignright, .aligncenter, .alignnone{
+	margin-bottom: 1em;
+}
+// Additional Colors
+.light-blue-bg{
+	background: lighten($blue-light, 10%);
+}
+.light-orange-bg{
+	background: lighten($orange-light, 10%);
+}
+// Table Borders
+.table-border-right{
+	border-right: 1px solid $gray-lightest;
+}
+// InPage Navs
+ul.nav-half{
+	@include make-row();
+	padding: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+	li{
+		margin-bottom: 0;
+		@include make-xs-column(7);
+		a{
+			@extend .btn;
+			@extend .btn-default;
+		}
+	}
+}
+ul.half-nav{
+	@include make-row();
+	padding: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+	li{
+		margin-bottom: 0;
+		@include make-xs-column(7);
+		a{
+			@extend .btn;
+			@extend .btn-default;
+		}
+	}
+}
+// page items
+.page-widget{
+	@media (max-width: $screen-xs-max) {
+		padding-left: 0;
+		padding-bottom: 1em;
+	}
+}
+.page-block{
+	@media (max-width: $screen-xs-max) {
+		padding-bottom: 1em;
+	}
+}
+// Fluid width items
+.flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.flexible-container iframe,   
+.flexible-container object,  
+.flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.tribe-events-back{
+	.btn{
+		i{
+		margin-right: 0
+		}
+	}
+}

@@ -1,0 +1,441 @@
+//
+// Carousel
+// --------------------------------------------------
+
+
+// Wrapper for the slide container and indicators
+.carousel {
+  position: relative;
+  background: $white;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  > .item {
+    display: none;
+    position: relative;
+    @include transition(.6s ease-in-out left);
+
+    // Account for jankitude on images
+    > img,
+    > a > img {
+      @include img-responsive();
+      line-height: 1;
+    }
+  }
+
+  > .active,
+  > .next,
+  > .prev {
+    display: block;
+  }
+
+  > .active {
+    left: 0;
+  }
+
+  > .next,
+  > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  > .next {
+    left: 100%;
+  }
+  > .prev {
+    left: -100%;
+  }
+  > .next.left,
+  > .prev.right {
+    left: 0;
+  }
+
+  > .active.left {
+    left: -100%;
+  }
+  > .active.right {
+    left: 100%;
+  }
+
+}
+
+// Left/right controls for nav
+// ---------------------------
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $carousel-control-width;
+  @include opacity($carousel-control-opacity);
+  font-size: $carousel-control-font-size;
+  color: $carousel-control-color;
+  text-align: center;
+  text-shadow: $carousel-text-shadow;
+  // We can't have this transition here because WebKit cancels the carousel
+  // animation if you trip this while in the middle of another animation.
+
+  // Set gradients for backgrounds
+  &.left {
+    //@include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
+  }
+  &.right {
+    left: auto;
+    right: 0;
+    //@include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
+  }
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: $carousel-control-color;
+    text-decoration: none;
+    @include opacity(.9);
+  }
+
+  // Toggles
+  .icon-prev,
+  .icon-next,
+  .fa-chevron-left,
+  .fa-chevron-right {
+    position: absolute;
+    top: 33%;
+    z-index: 5;
+    display: inline-block;
+  }
+  .icon-prev,
+  .fa-chevron-left {
+    left: 33%;
+    margin-left: -10px;
+  }
+  .icon-next,
+  .fa-chevron-right {
+    right: 33%;
+    margin-right: -10px;
+  }
+  .icon-prev,
+  .icon-next {
+    width:  20px;
+    height: 20px;
+    margin-top: -10px;
+    font-family: serif;
+  }
+
+
+  .icon-prev {
+    &:before {
+      content: '\2039';// SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
+    }
+  }
+  .icon-next {
+    &:before {
+      content: '\203a';// SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
+    }
+  }
+}
+
+// Optional indicator pips
+//
+// Add an unordered list with the following class and add a list item for each
+// slide your carousel holds.
+
+.carousel-boxes {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  li {
+    display: block;
+    //border-left: 2px solid $carousel-indicator-border-color;
+    //border-top: 2px solid $carousel-indicator-border-color;
+    cursor: pointer;
+    margin: 0;
+  	position: relative;
+  	width: 100%;
+  	border: 1px solid $white;
+  	float: none;
+	background-color: $white;
+	.carousel-thumb{
+    	width: 45%;
+    	float: left;
+    }
+    .carousel-caption{
+    	width: 55%;
+    	float: left;
+    	position: relative;
+    	background-color: $blue-dark;
+    	left: 0;
+    	right: 0;
+    }
+  }
+  
+  @media screen and (min-width: $screen-md-min) {
+	  li {
+	    display: inline-block;
+		position: relative;
+		width: 50%;
+		float: left;
+	    .carousel-thumb{
+	    	width: 100%;
+	    	float: none;
+	    	border-right: none;
+	    }
+	    .carousel-caption{
+	    	width: 100%;
+	    	float: none;
+	    	position: absolute;
+	    	background-color: rgba($blue-dark, .5);
+	    }
+	  }
+  }
+  .active > .carousel-overlay{
+ 	 background: transparent;
+  }
+}
+
+// Optional captions
+// -----------------------------
+// Hidden by default for smaller viewports
+.carousel-caption {
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  bottom: 0;
+  z-index: 10;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: $white;
+  text-align: left;
+  background-color: rgba($blue-dark, .5);
+  @media (max-width: 480px) {
+  	position: relative;
+  	margin-bottom: 1em;
+  	left: 0px;
+  	right: 0px;
+  }
+  & .btn {
+    text-shadow: none; // No shadow for button elements in carousel-caption
+    margin-bottom: .5em;
+  }
+  h2, h5{
+  	text-transform: uppercase;
+  	font-weight: 600;
+  	margin: 0;
+  	
+  }
+  h2{
+  	padding: .5em 0;
+  	margin: 0;
+  	line-height: 1.1;
+  	color: $white;
+  	@media screen and (max-width: $screen-sm-max) {
+  		//font-size: $font-size-h3;
+  	}
+  	@media screen and (max-width: $screen-xs-max) {
+  		padding-bottom: 0;
+  	}
+  }
+  h5{
+  	padding: .2em 0;
+  	line-height: 1;
+  	color: $white;
+  	margin: 0;
+  }
+  p{
+  	@media screen and (min-width: $screen-md-min) {
+  		font-size: 91.667%;
+  		padding-top: .75em;
+  	}
+  	font-weight: bold;
+  	margin-top: 0;
+  	padding-top: .6em;
+  }
+}
+.full-bg{
+	position: relative;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	img.scaled {
+	    position: relative;
+	    visibility: hidden;
+	    z-index: -1;
+	    width: 72%;
+	    min-width: 40%;
+	    padding-top: 0%;
+	}
+	@media screen and (min-width: $screen-sm-min) {
+	//margin-top: 1px;
+		
+		img.scaled {
+	    	width: 53%;
+		}
+	}
+	@media screen and (min-width: $screen-md-min) {
+	border-right: 1px solid $carousel-indicator-border-color;
+	border-left: 1px solid $carousel-indicator-border-color;
+		img.scaled {
+	    	width: 65.75%;
+	    }
+	}
+	@media screen and (min-width: $screen-lg-min) {
+		img.scaled {
+	    	width: 65.88%;
+	    }
+	}
+	
+}
+
+// Scale up controls for tablets and up
+@media screen and (min-width: $screen-sm-min) {
+  .slide-image{
+  	padding-right: 0;
+   
+  }
+  .slide-thumbs{
+  	padding-left: 0;
+  	margin-top: -1px;
+  	margin-bottom: -1px;
+  }
+  // Scale up the controls a smidge
+  .carousel-control {
+    .fa-chevron-left,
+    .fa-chevron-right,
+    .icon-prev,
+    .icon-next {
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      font-size: 30px;
+    }
+    .fa-chevron-left,
+    .icon-prev {
+      margin-left: -15px;
+    }
+    .fa-chevron-right,
+    .icon-next {
+      margin-right: -15px;
+    }
+  }
+
+  // Show and left align the captions
+  .carousel-caption {
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    padding-left: .75em;
+    padding-right: .75em;
+    
+  }
+
+  // Move up the indicators
+  .carousel-indicators {
+  }
+}
+.carousel-overlay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba($white, .25);
+	@include transition(all 0.25s 0 ease);
+	&:hover,
+	&:focus {
+	  background: rgba($white, 0);
+	}
+	
+}
+
+// Carousel Nav for Feature
+// ----------------------------------------------
+.slider-nav{
+	position: absolute;
+	z-index: 1234;
+	top: 1em;
+	right: 1em;
+	.nav-arrow{
+		width: 1em;
+		text-align: center;
+		float: left;
+	}
+	.carousel-nav{
+		list-style: none;
+		
+		padding: 0;
+		li{
+			float: left;
+			margin: 0 .25em;
+			&.indicate{
+				border-radius: 1em;
+				width: .75em;
+				height: .75em;
+				margin-top: .15em;
+				background: $gray-light;
+				border: 1px solid $gray-lighter;
+				&.active{
+					border: 1px solid $orange-light;
+					background: $orange;
+				}
+				&:hover, &:focus{
+					border: 1px solid $white;
+					background: lighten($orange-light, 15%);
+				}
+			}
+			a{
+				background: transparent;
+				font-size: 1em;
+				position: relative;
+				color: $orange;
+				.fa-chevron-left,
+				.fa-chevron-right{
+					font-size: 1em;
+				}
+			}
+		}
+	}
+}
+#feature-slider{
+	//max-height: 440px;
+	.carousel-inner{
+		overflow: visible;
+	}
+	.carousel-inner > .item {
+		-webkit-transition: opacity 1s;
+		-moz-transition: opacity 1s;
+		-ms-transition: opacity 1s;
+		-o-transition: opacity 1s;
+		transition: opacity 1s;}
+	.carousel-inner > .active.left, .carousel-inner > .active.right {
+		left:0;
+		opacity:0;
+		z-index:2;
+	}
+	.carousel-inner > .next {
+		left:0;
+		opacity:1;
+		z-index:1;
+	}
+	.carousel-inner > .prev {
+		left:0;
+		opacity:1;
+		z-index:1;
+	}
+}

@@ -1,0 +1,19 @@
+// Core items for integration
+//@import "compass/css3";
+@import "franklin";
+
+// Specific CSS for Editor
+@import "bootstrap-style";
+
+body{
+	background: white;
+	margin: 10px;
+	font-weight: 200;
+	font-style: normal;
+	font-family: $font-family-sans-serif;
+}
+.mce-text{
+	font-weight: 200;
+	font-style: normal;
+	font-family: $font-family-sans-serif;
+}

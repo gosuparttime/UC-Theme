@@ -1,0 +1,14 @@
+2014-08-06 13:23:30     error assets/scss/main.scss (Line 17 of assets/scss/bootstrap/mixins/_buttons.scss: "transparent" is not a color for `darken')
+2014-08-06 13:23:30 overwrite assets/css/main.css 
+2014-08-06 13:23:44     error assets/scss/main.scss (Line 17 of assets/scss/bootstrap/mixins/_buttons.scss: "transparent" is not a color for `darken')
+2014-08-06 13:23:44 overwrite assets/css/main.css 
+2014-08-06 13:25:12     error assets/scss/bootstrap.scss (Line 17 of assets/scss/bootstrap/mixins/_buttons.scss: "transparent" is not a color for `darken')
+2014-08-06 13:25:12 overwrite assets/css/bootstrap.css 
+2014-08-06 13:26:12     error assets/scss/bootstrap.scss (Line 62 of assets/scss/bootstrap/_header.scss: wrong number of arguments (2 for 1) for `opacity')
+2014-08-06 13:26:12 overwrite assets/css/bootstrap.css 
+2014-08-06 13:26:15     error assets/scss/main.scss (Line 62 of assets/scss/bootstrap/_header.scss: wrong number of arguments (2 for 1) for `opacity')
+2014-08-06 13:26:15 overwrite assets/css/main.css 
+2014-08-06 13:26:35 overwrite assets/css/bootstrap.css 
+2014-08-06 13:26:40 overwrite assets/css/main.css 
+2014-08-06 13:26:51 identical assets/css/bootstrap.css 
+2014-08-06 13:26:55 overwrite assets/css/main.css 

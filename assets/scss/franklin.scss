@@ -1,0 +1,155 @@
+/* @license
+ * MyFonts Webfont Build ID 2403059, 2012-11-02T10:29:44-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Franklin Gothic Comp Demi Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-demi-compressed-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Heavy Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-heavy-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Medium Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-medium-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Heavy by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-heavy/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Demi Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-demi-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Cond Demi Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-demi-condensed-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Cond Medium Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-medium-condensed-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Cond Medium by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-medium-condensed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Cond SC Book by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/sc-t-book-condensed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Book Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-book-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Cond Book Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-book-condensed-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Medium by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-medium/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Demi by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-demi/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Cond Demi by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-demi-condensed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Book by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-book/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Comp Book Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-book-compressed-italic/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic ExtraComp Book by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/d-book-extra-compressed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Cond Book by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-book-condensed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Comp Demi by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-demi-compressed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic ExtraComp Demi by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/d-demi-extra-compressed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Cond SC Medium by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/sc-t-medium-condensed/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Franklin Gothic Comp Book by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-book-compressed/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: Franklin Gothic Light by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-light/
+ * Licensed pageviews: unspecified
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2403059
+ * Webfonts copyright: Copyright 2010 URW++ Design &amp; Development Hamburg
+ * 
+ * © 2012 Bitstream Inc
+*/
+
+
+$fg-font-path:        "../fonts/franklin-gothic" !default;
+
+// FG Medium Italic
+@font-face {
+	font-family: 'FranklinGothic';
+	src: url('#{$fg-font-path}/24AAF3_2_0.eot');src: url('#{$fg-font-path}/24AAF3_2_0.eot?#iefix') format('embedded-opentype'),url('#{$fg-font-path}/24AAF3_2_0.woff') format('woff'),url('#{$fg-font-path}/24AAF3_2_0.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+// FG Book Italic
+@font-face {
+	font-family: 'FranklinGothic';
+	src: url('#{$fg-font-path}/24AAF3_9_0.eot');src: url('#{$fg-font-path}/24AAF3_9_0.eot?#iefix') format('embedded-opentype'),url('#{$fg-font-path}/24AAF3_9_0.woff') format('woff'),url('#{$fg-font-path}/24AAF3_9_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+// FG Medium  
+@font-face {
+	font-family: 'FranklinGothic';
+	src: url('#{$fg-font-path}/24AAF3_B_0.eot');src: url('#{$fg-font-path}/24AAF3_B_0.eot?#iefix') format('embedded-opentype'),url('#{$fg-font-path}/24AAF3_B_0.woff') format('woff'),url('#{$fg-font-path}/24AAF3_B_0.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+// FG Light
+@font-face {
+	font-family: 'FranklinGothic';
+	src: url('#{$fg-font-path}/24AAF3_16_0.eot');src: url('#{$fg-font-path}/24AAF3_16_0.eot?#iefix') format('embedded-opentype'),url('#{$fg-font-path}/24AAF3_16_0.woff') format('woff'),url('#{$fg-font-path}/24AAF3_16_0.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+// FG Demi
+@font-face {
+	font-family: 'FranklinGothic';
+	src: url('#{$fg-font-path}/24AAF3_C_0.eot');src: url('#{$fg-font-path}/24AAF3_C_0.eot?#iefix') format('embedded-opentype'),url('#{$fg-font-path}/24AAF3_C_0.woff') format('woff'),url('#{$fg-font-path}/24AAF3_C_0.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+// FG Book  
+@font-face {
+	font-family: 'FranklinGothic';
+	src: url('#{$fg-font-path}/24AAF3_E_0.eot');src: url('#{$fg-font-path}/24AAF3_E_0.eot?#iefix') format('embedded-opentype'),url('#{$fg-font-path}/24AAF3_E_0.woff') format('woff'),url('#{$fg-font-path}/24AAF3_E_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} 
+ 

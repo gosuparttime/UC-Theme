@@ -1,0 +1,33 @@
+// Devin Edits - Header
+
+#header-wrap{
+padding-top: .5em;
+	position: relative;
+	#search-site{
+		@media (min-width: $screen-sm-min) {
+	  		position: relative;
+	  		float: right;
+	  		padding-right: 0;
+	  	}
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  button{
+	  	float: right;
+	  }
+	}
+	#logo{
+		padding-top: 2em;
+		padding-bottom: .5em;
+		a.brand{
+			padding: 1em 0;
+			@media (min-width: $screen-sm-min) {
+					padding: 1em 0;
+			}
+		}
+	}
+	#utility-wrap{
+		padding-top: 1em;
+		padding-bottom: .25em;
+	}
+}
