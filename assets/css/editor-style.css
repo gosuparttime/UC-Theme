@@ -3115,6 +3115,9 @@ ul.half-nav {
 .tribe-events-back .btn i, .tribe-events-back ul.nav-half li a i, ul.nav-half li .tribe-events-back a i, .tribe-events-back ul.half-nav li a i, ul.half-nav li .tribe-events-back a i {
   margin-right: 0; }
 
+.ngg-gallery-thumbnail {
+  margin: 3px; }
+
 body {
   background: white;
   margin: 10px;
