@@ -1,4 +1,4 @@
-<section class="pad-one-tb">
+<section>
   <?php
 
 // check if the repeater field has rows of data

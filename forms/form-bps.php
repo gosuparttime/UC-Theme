@@ -49,7 +49,6 @@ $(document).ready(function() {
     <input type="hidden" name="subid" value="" />
     <input type="hidden" name="td" value="" />
     <input type="hidden" name="formtype" value="addcontact" />
-    <p>Please contact me.</p>
     <!-- Name Info -->
     <div class="row">
       <div class="col-sm-15 mar-half-b" field_id="1818263">
