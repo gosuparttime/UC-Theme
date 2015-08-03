@@ -10,17 +10,19 @@ $(document).ready(function() {
 				required: true,
 				email: true
 			},
-			"68251": { // Email
+			"68251": { // Verify Email
 				required: true,
 				email: true,
 				equalTo: "#56797"
 			},
+			"76276[72411]": "required", // State
 		},
 		messages: {
 			"56795[71516]": "Please enter your first name", // First name
 			"56796[71517]": "Please enter your last name", // last name
 			"56797": "Please enter a valid email address", // email
 			"68251": "Please make sure email addresses match", // email
+			"76276[72411]": "Please enter your state of residence", // email
 		},
 		
 		submitHandler: function() {
@@ -81,6 +83,75 @@ $(document).ready(function() {
         <label for="68251">Verify E-mail Address <span class="red">*</span></label>
         <div class="field">
           <input type="text" class="form-control" name="68251" id="68251" value=""  />
+        </div>
+      </div>
+      <div class="col-sm-15 mar-half-b" field_id="76276">
+        <label>State You Live In? <span class="red">*</span></label>
+        <div class="field">
+          <select id="field_72411" class="form-control" name="76276[72411]" >
+            <option value="Please Choose" >Please Choose</option>
+            <option value="AL" >Alabama</option>
+            <option value="AK" >Alaska</option>
+            <option value="AZ" >Arizona</option>
+            <option value="AR" >Arkansas</option>
+            <option value="CA" >California</option>
+            <option value="CT" >Connecticut</option>
+            <option value="CO" >Colorado</option>
+            <option value="DE" >Delaware</option>
+            <option value="DC" >District of Columbia</option>
+            <option value="FL" >Florida</option>
+            <option value="GA" >Georgia</option>
+            <option value="HI" >Hawaii</option>
+            <option value="ID" >Idaho</option>
+            <option value="IL" >Illinois</option>
+            <option value="IN" >Indiana</option>
+            <option value="IA" >Iowa</option>
+            <option value="KS" >Kansas</option>
+            <option value="KY" >Kentucky</option>
+            <option value="LA" >Louisiana</option>
+            <option value="ME" >Maine</option>
+            <option value="MD" >Maryland</option>
+            <option value="MA" >Massachusetts</option>
+            <option value="MI" >Michigan</option>
+            <option value="MN" >Minnesota</option>
+            <option value="MS" >Mississippi</option>
+            <option value="MO" >Missouri</option>
+            <option value="MT" >Montana</option>
+            <option value="NE" >Nebraska</option>
+            <option value="NV" >Nevada</option>
+            <option value="NH" >New Hampshire</option>
+            <option value="NJ" >New Jersey</option>
+            <option value="NM" >New Mexico</option>
+            <option value="NY" selected="selected">New York</option>
+            <option value="NC" >North Carolina</option>
+            <option value="ND" >North Dakota</option>
+            <option value="OH" >Ohio</option>
+            <option value="OK" >Oklahoma</option>
+            <option value="OR" >Oregon</option>
+            <option value="PA" >Pennsylvania</option>
+            <option value="RI" >Rhode Island</option>
+            <option value="SC" >South Carolina</option>
+            <option value="SD" >South Dakota</option>
+            <option value="TN" >Tennessee</option>
+            <option value="TX" >Texas</option>
+            <option value="UT" >Utah</option>
+            <option value="VT" >Vermont</option>
+            <option value="VA" >Virginia</option>
+            <option value="WA" >Washington</option>
+            <option value="WV" >West Virginia</option>
+            <option value="WI" >Wisconsin</option>
+            <option value="WY" >Wyoming</option>
+            <option value="AA" >Armed Forces the Americas</option>
+            <option value="AE" >Armed Forces Europe</option>
+            <option value="AP" >Armed Forces Pacific</option>
+            <option value="AS" >American Samoa</option>
+            <option value="GU" >Guam</option>
+            <option value="MP" >Northern Mariana Islands</option>
+            <option value="PR" >Puerto Rico</option>
+            <option value="UM" >U.S. Minor Outlying Islands</option>
+            <option value="VI" >U.S. Virgin Islands</option>
+            <option value="N/A" >Not Living in the U.S.</option>
+          </select>
         </div>
       </div>
       <div class="col-sm-15 mar-half-b" field_id="71525">

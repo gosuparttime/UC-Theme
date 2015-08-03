@@ -97,6 +97,15 @@ window._fbq.push(['track', '6015415639627', {'value':'0.01','currency':'USD'}]);
 </noscript>
 <!-- Segment Pixel - SY - Syracuse University - BPS - Site - DO NOT MODIFY -->
 <img src="http://bcp.crwdcntrl.net/5/c=931/b=22629562" width="1" height="1"/>
+<!-- End of Segment Pixel -->
+<!-- Segment Pixel - SY - Syracuse University UC [BPS] - Site - DO NOT MODIFY -->
+<img src="http://ib.adnxs.com/seg?add=2761445&t=2" width="1" height="1" />
+<!-- End of Segment Pixel -->
+<!-- end targeting -->
+<? 
+} elseif (get_field('target_pixel') == 'BPS-UC'){ ?>
+<!-- Segment Pixel - SY - Syracuse University - BPS - Site - DO NOT MODIFY -->
+<img src="http://bcp.crwdcntrl.net/5/c=931/b=22629562" width="1" height="1"/>
 <!-- Segment Pixel - SY - Syracuse University - UC - Site - DO NOT MODIFY -->
 <img src="http://bcp.crwdcntrl.net/5/c=931/b=22629567" width="1" height="1"/>
 <!-- End of Segment Pixel -->
@@ -106,18 +115,6 @@ window._fbq.push(['track', '6015415639627', {'value':'0.01','currency':'USD'}]);
 <!-- Segment Pixel - SY - Syracuse University - UC - Site - DO NOT MODIFY -->
 <img src="http://ib.adnxs.com/seg?add=2654591&t=2" width="1" height="1" />
 <!-- End of Segment Pixel -->
-<!-- end targeting -->
-<? 
-} elseif (get_field('target_pixel') == 'BPS-UC'){ ?>
-<!-- Targeting Pixels and Scripts -->
-<!-- Segment Pixel - SY - Syracuse University - New - Site - DO NOT MODIFY -->
-<img src="http://bcp.crwdcntrl.net/5/c=931/b=22629567" width="1" height="1"/>
-<!-- End of Segment Pixel -->
-<!-- Segment Pixel - SY - Syracuse University - UC - Site - DO NOT MODIFY -->
-<img src="http://ib.adnxs.com/seg?add=2654591&t=2" width="1" height="1" />
-<!-- End of Segment Pixel -->
-<!-- Segment Pixel - SY - Syracuse University - BPS - Site - DO NOT MODIFY -->
-<img src="http://bcp.crwdcntrl.net/5/c=931/b=22629562" width="1" height="1"/>
 <!-- end targeting -->
 <? } else { ?>
 <!-- Targeting Pixels and Scripts -->
