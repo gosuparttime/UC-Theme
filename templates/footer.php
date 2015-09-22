@@ -103,6 +103,29 @@ window._fbq.push(['track', '6015415639627', {'value':'0.01','currency':'USD'}]);
 <!-- End of Segment Pixel -->
 <!-- end targeting -->
 <? 
+} elseif (get_field('target_pixel') == 'UC-Burn'){ ?>
+<!-- Facebook Conversion Code for BPS Inquiries -->
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6015415639627', {'value':'0.01','currency':'USD'}]);
+</script>
+<noscript>
+<img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6015415639627&amp;cd[value]=0.01&amp;cd[currency]=USD&amp;noscript=1" />
+</noscript>
+<!-- Segment Pixel - SY - Syracuse University - UC - Burn - DO NOT MODIFY --> 
+<img src="http://ib.adnxs.com/seg?add=3257397&t=2" width="1" height="1" />
+<!-- End of Segment Pixel -->
+<? 
 } elseif (get_field('target_pixel') == 'BPS-UC'){ ?>
 <!-- Segment Pixel - SY - Syracuse University - BPS - Site - DO NOT MODIFY -->
 <img src="http://bcp.crwdcntrl.net/5/c=931/b=22629562" width="1" height="1"/>
